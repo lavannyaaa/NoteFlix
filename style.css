@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url(img3.avif);
+    background-size: cover;
+    background-blend-mode: overlay; 
+    background-color: rgba(210, 221, 188, 0.6); */
+    background-color: #e8ccb7;
+    max-height: 100vh; 
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    color: #493628;
+}
+
+.containerr {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.fa-plus {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #8a684f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-shadow: 3px 3px #49221a;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #FED8B1;
+    margin-bottom: 40px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu button {
+    box-shadow: 5px 5px  rgb(0, 0, 0);
+    background-color: #AB886D;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+.menu button:hover {
+    background-color: #9c7558;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.note.placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.note {
+    background-color: #AB886D;
+    min-width: 100px; 
+    min-height: 100px; 
+    max-width: 200px;
+    height: fit-content; 
+    max-height: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    white-space: none;
+    text-overflow: ellipse;
+    padding: 20px; 
+}
+
+#notesContainer {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: flex-start; 
+    padding: 10px;
+}
+
+.note:hover {
+    background-color: #A67B5B;
+}
+
+.note-detail {
+    width: 600px;
+    margin-top: 20px;
+    display: none;
+    background-color: #bacead;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note-content {
+    background-color: #d5ddcb;
+    width: 95%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none; 
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #91bd94;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #729675;
+
+}
+
+.icon {
+    color: #000;
+}
+
+.btn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+body.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #f8dafd;
+    color: rgb(0, 0, 0);
+}
+
+body.dark-mode button:hover {
+    background-color: #b980af;
+}  
+
+body.dark-mode .container {
+    background: #312d2d;
+}
+
+body.dark-mode .note {
+    background: #f8dafd;
+}
+
+body.dark-mode .note:hover {
+    background: #d299c6;
+}
+
+body.dark-mode .note-detail {
+    background: #3a3838;
+}
+
+body.dark-mode .note-content {
+    background: #4d4b4b;
+    color: white;
+}
+
+body.dark-mode .sidebar {
+    background-color: #202020;
+    color: white;
+} 
+
+body.dark-mode .logo {
+    color: white;
+    text-shadow: none;
+} 

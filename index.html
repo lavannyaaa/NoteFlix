@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>My Notes</title>
+</head>
+<body>
+    <div class="containerr">
+        <aside class="sidebar">
+            <div class="logo"><h1>NoteFlix</h1></div>
+            <nav class="menu">
+                <ul> 
+                    <li><button onclick="addNote()">Add New</button></li>
+                    <li><a href="doodle.html"><button>Doodle</button></a></li>
+                    <li><button id="darkModeToggle" ><i class="fa-regular fa-lightbulb"></i></button></li>
+                </ul>
+            </nav>
+        </aside>
+    <div class="container">
+        <div class="header">
+            <h2>Enter your Notes here..!!</h2>
+        </div>
+        <div class="notes-container" id="notesContainer">
+            <div class="note" id="addNote" onclick="addNote()">
+                <span><i class="fa-solid fa-plus"></i></span>
+            </div>
+        </div>
+        <div class="note-detail" id="noteDetail" style="display: none;">
+            <textarea id="noteContent" class="note-content" placeholder="New Note"></textarea>
+            <button onclick="saveNote()">Save</button>
+            <button onclick="goBack()">Go Back</button>
+            <button onclick="deleteNote()">Delete</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="dark_script.js"></script>
+</body>
+</html>

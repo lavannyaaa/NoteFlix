@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Doodles</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="doodleStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="btn">
+    <button id="darkModeToggle" ><i class="fa-regular fa-lightbulb"></i></button>
+    <a href="index.html"><button >NOTES</button></a>
+</div>
+    <div class="container">
+        <h1><strong>Doodle Pad</strong></h1>
+        <canvas id="doodleCanvas"></canvas>
+        <div class="controls">
+            <input type="color" id="colorPicker" value="#000000" style="border: 1px solid black;">
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+    <script src="doodleScript.js"></script>
+    <script src="dark_script.js"></script>
+</body>
+</html>
